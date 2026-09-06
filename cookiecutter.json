@@ -1,0 +1,32 @@
+{
+  "project_name": "PySpark Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "package_name": "{{ cookiecutter.project_slug }}",
+
+  "project_description": "A Python-based PySpark project with notebooks, modular source code, tests, and configuration management.",
+  "author_name": "Ajay Kumar",
+  "author_email": "this.ajk@gmail.com",
+
+  "version": "0.1.0",
+  "python_version": "3.12",
+  "spark_app_name": "{{ cookiecutter.project_name }}",
+
+  "license": ["MIT", "Apache-2.0", "BSD-3-Clause", "Proprietary"],
+
+  "use_setup_py": ["yes", "no"],
+  "use_pyproject_toml": ["yes", "no"],
+  "use_notebooks": ["yes", "no"],
+  "use_tests": ["yes", "no"],
+  "use_docs": ["yes", "no"],
+  "use_scripts": ["yes", "no"],
+  "use_sample_data": ["yes", "no"],
+  "use_sql_folder": ["yes", "no"],
+  "include_logs_folder": ["yes", "no"],
+  "include_spark_runtime_dirs": ["yes", "no"],
+
+  "default_environment": ["local", "dev", "prod"],
+
+  "_copy_without_render": [
+    "notebooks/*.ipynb"
+  ]
+}
